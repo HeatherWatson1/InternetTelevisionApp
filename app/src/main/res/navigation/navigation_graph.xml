@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/channelsFragment2">
+
+    <fragment
+        android:id="@+id/channelsFragment2"
+        android:name="com.example.internettelevision.ChannelsFragment"
+        android:label="fragment_channels"
+        tools:layout="@layout/fragment_channels" >
+        <action
+            android:id="@+id/channelsToTV"
+            app:destination="@id/tvFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvFragment"
+        android:name="com.example.internettelevision.TvFragment"
+        android:label="fragment_tv"
+        tools:layout="@layout/fragment_tv" />
+</navigation>
